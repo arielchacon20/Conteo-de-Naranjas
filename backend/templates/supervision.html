@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisión de Frutas</title>
+</head>
+<body>
+    <h2>Supervisión de Frutas</h2>
+    <form method="POST">
+        <label for="proveedor">Nombre del Proveedor</label>
+        <input type="text" id="proveedor" name="proveedor" required><br><br>
+        <button type="submit">Iniciar Contador de Frutas</button>
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

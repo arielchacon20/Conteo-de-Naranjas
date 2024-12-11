@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Supervisión de Frutas</title>
+</head>
+<body>
+    <h1>Formulario de Supervisión de Frutas</h1>
+    <form action="/iniciar_conteo" method="POST">
+        <label for="nombre_supervisor">Nombre del Supervisor:</label>
+        <input type="text" id="nombre_supervisor" name="nombre_supervisor" required><br><br>
+        
+        <label for="proveedor">Proveedor:</label>
+        <input type="text" id="proveedor" name="proveedor" required><br><br>
+        
+        <input type="submit" value="Iniciar Conteo">
+    </form>
+</body>
+</html>
